@@ -66,7 +66,7 @@ class Login:
         else:
             return {"success": False, "message": "Contraseña incorrecta."}
 
-
+#REVISION CLASE USUARIO
 class Usuario:
     """Clase para manejar el registro de nuevos usuarios."""
 
@@ -124,7 +124,7 @@ class Usuario:
             "isProvider": False
         }
 
-
+#REVISION CLASE SERVICIO
 class Servicio:
     """Clase para manejar el CRUD de servicios y consultas al catálogo."""
 
@@ -197,7 +197,7 @@ class Servicio:
 
         return {"success": True, "message": "Servicio creado correctamente.", "id": new_service_id}
 
-
+#REVISION CLASE HISTORIALRESERVAS
 class HistorialReservas:
     """Clase para obtener historial completo de reservas (incluyendo canceladas)."""
 
@@ -262,7 +262,7 @@ class HistorialReservas:
 
         return {"success": True, "data": historial}
 
-
+#REVISION CLASE RESERVA
 class Reserva:
     """Clase para manejar la creación de nuevas reservas."""
 
@@ -306,7 +306,7 @@ class Reserva:
         
         return {"success": True, "message": "Reserva creada exitosamente.", "reservaId": reserva_id}
 
-
+#REVISION CLASE PAGO
 class Pago:
     """Clase para manejar y procesar pagos."""
 
