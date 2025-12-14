@@ -18,6 +18,7 @@ CORS(app)
 # =======================================================
 # ENDPOINT PRINCIPAL (SIRVE EL HTML)
 # =======================================================
+#REVISION DE ENDPOINTS
 @app.route("/")
 def serve_frontend():
     """Sirve el archivo index.html cuando se accede a la raíz del servidor."""
@@ -61,7 +62,7 @@ def handle_login():
 # =======================================================
 # ENDPOINTS DE SERVICIOS (CRUD)
 # =======================================================
-
+#REVISION ENDPOINTS
 @app.route('/api/services', methods=['GET'])
 def get_all_services():
     """Endpoint para obtener todo el catálogo de servicios."""
@@ -89,7 +90,7 @@ def create_service():
 # =======================================================
 # ENDPOINTS DE RESERVAS Y PAGOS
 # =======================================================
-
+#REVISION ENDPOINTS
 @app.route('/api/reservation', methods=['POST'])
 def create_reservation():
     """Endpoint para que el Cliente cree una nueva reserva."""
